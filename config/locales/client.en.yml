@@ -1,0 +1,9 @@
+en:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          discourse_highest_post: "Highest Post Excerpt Serializer"
+  js:
+    discourse_highest_post:
+      placeholder: placeholder

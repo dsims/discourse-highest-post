@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 # name: discourse-highest-post
-# about: Adds hightest_post_excerpt to TopicListItem serializer
-# version: 0.0.1
+# about: Adds highest_post_excerpt to TopicListItem serializer
+# version: 0.0.2
 # authors: dsims
 # url: https://github.com/dsims/discourse-highest-post
 # required_version: 2.7.0
+
+enabled_site_setting :highest_post_enabled
 
 after_initialize do
   module ::HighestPost

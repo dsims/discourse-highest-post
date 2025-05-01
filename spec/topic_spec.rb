@@ -5,6 +5,10 @@ RSpec.describe Topic do
   let!(:post) { Fabricate(:post, topic: topic) }
   let!(:reply) { Fabricate(:post, topic: topic) }
 
+  before(:each) do
+    SiteSetting.highest_post_enabled = true
+  end
+
   describe "has_one highest_post" do
     it "finds the highest post" do
       Topic.reset_all_highest!

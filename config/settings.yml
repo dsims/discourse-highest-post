@@ -1,0 +1,4 @@
+discourse_highest_post:
+  highest_post_enabled:
+    default: false
+    client: true
